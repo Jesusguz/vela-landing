@@ -5,4 +5,4 @@ export default defineConfig({
   site: 'https://Jesusguz.github.io',
   base: '/vela-landing',
   integrations: [tailwind()],
-});
+});// Force build
