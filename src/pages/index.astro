@@ -1,17 +1,164 @@
 ---
-
+// Vela Coffee - Landing Page de Alto Rendimiento
 ---
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Vela Coffee | Tostado de Precisión para Mentes Creativas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0a0a0a] text-zinc-300 font-['Outfit'] antialiased">
+    
+    <nav class="fixed w-full z-50 border-b border-white/5 bg-black/50 backdrop-blur-xl">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <span class="text-2xl font-bold tracking-tighter text-white">VELA<span class="text-orange-500">.</span></span>
+        <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-zinc-400">
+          <a href="#proceso" class="hover:text-white transition-colors">Proceso</a>
+          <a href="#beneficios" class="hover:text-white transition-colors">Beneficios</a>
+          <a href="#leads" class="hover:text-white transition-colors">Suscripción</a>
+        </div>
+        <a href="#leads" class="bg-white text-black px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-orange-500 hover:text-white transition-all">
+          Pruébalo
+        </a>
+      </div>
+    </nav>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=2070" 
+          class="w-full h-full object-cover opacity-40 scale-105"
+          alt="Coffee Background"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-black via-black/20 to-[#0a0a0a]"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+        <div class="max-w-3xl">
+          <span class="inline-block py-1 px-3 rounded-full border border-orange-500/30 bg-orange-500/10 text-orange-500 text-xs font-bold tracking-widest uppercase mb-6 animate-fade-in">
+            Tostado en Pequeños Lotes
+          </span>
+          <h1 class="text-6xl md:text-8xl font-bold text-white tracking-tighter leading-[0.9] mb-8 animate-slide-up">
+            El café que tu <span class="text-orange-500 italic">ambición</span> merece.
+          </h1>
+          <p class="text-lg md:text-xl text-zinc-400 mb-10 max-w-xl leading-relaxed">
+            Eliminamos el ruido. Solo granos de origen único, tostados con algoritmos de precisión y entregados en tu puerta 48h después.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#leads" class="bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-orange-500 transition-all shadow-xl shadow-orange-900/20">
+              Ver Planes de Suscripción
+            </a>
+            <div class="flex items-center gap-4 px-4 text-sm font-medium text-zinc-500">
+              <span class="flex -space-x-2">
+                <div class="w-8 h-8 rounded-full border-2 border-black bg-zinc-800"></div>
+                <div class="w-8 h-8 rounded-full border-2 border-black bg-zinc-700"></div>
+                <div class="w-8 h-8 rounded-full border-2 border-black bg-zinc-600"></div>
+              </span>
+              +500 Brewmasters activos
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-20 border-y border-white/5 bg-zinc-900/30">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-white mb-2">100%</div>
+          <div class="text-xs uppercase tracking-widest text-zinc-500">Arábica Orgánico</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-white mb-2">48h</div>
+          <div class="text-xs uppercase tracking-widest text-zinc-500">Del Tostador a Casa</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-white mb-2">0</div>
+          <div class="text-xs uppercase tracking-widest text-zinc-500">Intermediarios</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-white mb-2">98pt</div>
+          <div class="text-xs uppercase tracking-widest text-zinc-500">SCA Rating Promedio</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-24 items-center">
+          <div>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">Ciencia aplicada al ritual de cada mañana.</h2>
+            <div class="space-y-12">
+              <div class="group">
+                <h3 class="text-xl font-bold text-orange-500 mb-2">Control Térmico Digital</h3>
+                <p class="text-zinc-400">Cada curva de tueste es monitoreada por sensores que ajustan la llama en milisegundos para resaltar notas florales únicas.</p>
+              </div>
+              <div class="group">
+                <h3 class="text-xl font-bold text-orange-500 mb-2">Envase con Válvula de Vacío</h3>
+                <p class="text-zinc-400">Nuestros empaques bloquean el 100% de la luz UV y permiten la desgasificación perfecta sin oxidar el grano.</p>
+              </div>
+            </div>
+          </div>
+          <div class="aspect-square rounded-3xl overflow-hidden bg-zinc-900 border border-white/5 relative">
+             <img 
+              src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=1000" 
+              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              alt="Coffee Process"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leads" class="py-32 bg-orange-600">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">¿Listo para subir de nivel?</h2>
+        <p class="text-orange-100 text-xl mb-12">Suscríbete para recibir acceso prioritario a los lotes de exportación.</p>
+        
+        <form class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto p-2 bg-white/10 rounded-2xl backdrop-blur-md">
+          <input 
+            type="email" 
+            placeholder="Email corporativo" 
+            class="flex-1 bg-transparent px-6 py-4 text-white placeholder:text-orange-200 focus:outline-none"
+            required
+          />
+          <button class="bg-white text-orange-600 font-bold px-10 py-4 rounded-xl hover:bg-black hover:text-white transition-all uppercase text-sm tracking-widest">
+            Unirme Ahora
+          </button>
+        </form>
+        <p class="mt-6 text-orange-200/60 text-sm">Sin spam. Solo café de especialidad.</p>
+      </div>
+    </section>
+
+    <footer class="py-20 px-6 border-t border-white/5">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+        <div class="text-center md:text-left">
+          <span class="text-xl font-bold text-white">VELA<span class="text-orange-500">.</span></span>
+          <p class="text-zinc-600 text-sm mt-2 font-mono">Build with Astro 4.0 + Tailwind</p>
+        </div>
+        <div class="flex gap-6 text-zinc-500 text-sm uppercase tracking-tighter">
+          <span>Serverless Deploy</span>
+          <span class="text-orange-500">/</span>
+          <span>Edge Delivery</span>
+          <span class="text-orange-500">/</span>
+          <span>Host Cost: $0.00</span>
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      @keyframes slide-up {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-slide-up {
+        animation: slide-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .animate-fade-in {
+        animation: slide-up 1.5s ease-out forwards;
+      }
+    </style>
+  </body>
 </html>
