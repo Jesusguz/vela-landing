@@ -1,0 +1,50 @@
+
+<section id="contacto" class="py-24 bg-[#0a0a0a] text-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 italic tracking-tight">Únete a la Élite del Café</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+        ¿Tienes una cafetería o buscas una suscripción personalizada? Déjanos tus datos.
+      </p>
+    </div>
+
+    <form 
+      action="https://formspree.io/f/tu-id-aqui" 
+      method="POST"
+      class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-[#111] p-10 rounded-3xl border border-white/5 shadow-2xl"
+    >
+      <div class="flex flex-col space-y-3">
+        <label class="text-xs font-bold text-orange-500 uppercase tracking-widest ml-1">Nombre Completo</label>
+        <input 
+          type="text" name="name" required placeholder="Ej. Ian Vela"
+          class="bg-[#1a1a1a] border border-white/10 rounded-xl p-4 focus:outline-none focus:border-orange-500 transition-all placeholder:text-gray-600"
+        />
+      </div>
+
+      <div class="flex flex-col space-y-3">
+        <label class="text-xs font-bold text-orange-500 uppercase tracking-widest ml-1">Correo Corporativo</label>
+        <input 
+          type="email" name="email" required placeholder="ian@velacoffee.com"
+          class="bg-[#1a1a1a] border border-white/10 rounded-xl p-4 focus:outline-none focus:border-orange-500 transition-all placeholder:text-gray-600"
+        />
+      </div>
+
+      <div class="flex flex-col space-y-3 md:col-span-2">
+        <label class="text-xs font-bold text-orange-500 uppercase tracking-widest ml-1">¿Cómo podemos ayudarte?</label>
+        <textarea 
+          name="message" rows="4" placeholder="Cuéntanos sobre tu interés en nuestro tostado de precisión..."
+          class="bg-[#1a1a1a] border border-white/10 rounded-xl p-4 focus:outline-none focus:border-orange-500 transition-all resize-none placeholder:text-gray-600"
+        ></textarea>
+      </div>
+
+      <div class="md:col-span-2 text-center pt-6">
+        <button 
+          type="submit" 
+          class="w-full md:w-auto bg-orange-600 hover:bg-orange-500 text-white font-black py-5 px-14 rounded-full transition-all transform hover:scale-105 shadow-xl shadow-orange-900/20 uppercase tracking-widest text-sm"
+        >
+          Enviar Solicitud Premium
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
